@@ -1,8 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <!--hej igen2222---->
-
     <groupId>se.nackademin</groupId>
     <artifactId>fortune-teller</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -14,7 +12,6 @@
         <junit.version>4.12</junit.version>
     </properties>
     <build>
-    <!--hej!3333-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
