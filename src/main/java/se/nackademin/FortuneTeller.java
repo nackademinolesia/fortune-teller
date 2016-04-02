@@ -17,8 +17,31 @@ public class FortuneTeller {
      *
      */
     public String calculate() {
+        //"Din framtid är adjektiv(<A>). Du borde sluta verb(<B>). "
+        //"Vi ser att du snart kommer att skaffa substantiv(<C>). "
+        //"Snart kommer du vilja verb(<D>), men då är det viktigt att du är adjektiv(<E>)."
+        int A, B, C, D, E;
+        String prediction, tmp;
+        A=magicNumbers.calculateA();
+        B=magicNumbers.calculateB();
+        C=magicNumbers.calculateC();
+        D=magicNumbers.calculateD();
+        E=magicNumbers.calculateE();
+        Translator tr=new Translator();
+        prediction="Din framtid är ";
+        tmp=tr.translate(A, 0);
+        prediction=prediction+tmp+". Du borde sluta ";
+        tmp=tr.translate(B, 2);
+        prediction=prediction+tmp+". Vi ser att du snart kommer att skaffa ";
+        tmp=tr.translate(C, 1);
+        prediction=prediction+tmp+". Snart kommer du vilja ";
+        tmp=tr.translate(D, 2);
+        prediction=prediction+tmp+", men då är det viktigt att du är ";
+        tmp=tr.translate(E, 0);
+        prediction=prediction+tmp+".";
+        return prediction;
         //TODO: Implement
-        return "Not implemented!";
+        //return "Not implemented!";
     }
 
     public static void main(String[] args) {
