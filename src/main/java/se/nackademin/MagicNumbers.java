@@ -89,7 +89,8 @@ public class MagicNumbers {
         //Multiplicera med kundens inkomst
         //Multiplicera resultatet från steg 2 med kundens inkomst, igen
         //Multiplicera resultatet från steg 3 med kundens längd
-        temp=age*income*income*height;
+        temp=age*income*income;
+        temp=temp*height;
         //Ta roten ur genom Math.sqrt()
         
         temp=Math.sqrt(temp);
@@ -98,6 +99,7 @@ public class MagicNumbers {
             temp=temp/2;            
         //Avrunda med math.round()
         E=(int) Math.round(temp);
+//        if (E==10) E=9;
         return E;
         //return 0;
     }
