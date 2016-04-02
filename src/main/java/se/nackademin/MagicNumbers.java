@@ -83,7 +83,7 @@ public class MagicNumbers {
 
     public int calculateE() {
         //TODO: calculate E
-        float temp;
+        double temp;
         int E;
         //Ta kundens ålder
         //Multiplicera med kundens inkomst
@@ -91,12 +91,13 @@ public class MagicNumbers {
         //Multiplicera resultatet från steg 3 med kundens längd
         temp=age*income*income*height;
         //Ta roten ur genom Math.sqrt()
+        
         temp=Math.sqrt(temp);
         //Dividera talet med 2 tills talet är under 10. 
         while (temp>=10)
             temp=temp/2;            
         //Avrunda med math.round()
-        E=Math.round(temp);
+        E=(int) Math.round(temp);
         return E;
         //return 0;
     }
